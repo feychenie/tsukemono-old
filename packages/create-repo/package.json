@@ -1,0 +1,26 @@
+{
+  "name": "@tsukemono/create-repo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Frederik Eychenié",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "bin": {
+    "create-repo": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "minimist": "^1.2.5"
+  }
+}
