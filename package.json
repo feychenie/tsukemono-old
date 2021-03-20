@@ -2,15 +2,17 @@
   "name": "tsukemono-repo",
   "private": true,
   "repository": "git@github.com:feychenie/tsukemono.git",
-  "author": "Frederik Eychenié <feychenie@me.com>",
+  "author": "Frederik Eychen ié <feychenie@me.com>",
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "tsukemono": {
+    "namespace": "@tsukemono",
+    "initialPackageVersion": "0.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
